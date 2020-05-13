@@ -1,0 +1,7 @@
+@import '~normalize.css';
+
+#root {
+    background: black;
+    width : 100vw;
+    height:100vh;
+}
