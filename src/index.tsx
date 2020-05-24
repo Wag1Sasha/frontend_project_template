@@ -1,10 +1,8 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function App(){
-    return(
-        <div>Typescript</div>
-    )
+function App(): JSX.Element {
+  return <div> Typescript</div>
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
