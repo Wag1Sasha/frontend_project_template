@@ -16,7 +16,9 @@
     }
   },
   "lint-staged": {
-    "*.(js|jsx|ts|tsx)": ["npm run lint:write"]
+    "*.(js|jsx|ts|tsx)": [
+      "npm run lint:write"
+    ]
   },
   "keywords": [],
   "browserslist": "> 0.25%, not dead",

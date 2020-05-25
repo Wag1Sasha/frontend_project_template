@@ -2,13 +2,13 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
     'prettier',
     'plugin:jest/recommended',
-    'jest-enzyme',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
@@ -28,7 +28,7 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'import', 'prettier', 'jest'],
   rules: {
     'indent': ['error', 2],
     'react/jsx-indent': [0],
@@ -53,5 +53,10 @@ module.exports = {
     'jsx-a11y/control-has-associated-label': [0],
     '@typescript-eslint/no-unused-vars': [0],
     '@typescript-eslint/no-empty-function': [0],
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error',
   },
 }
