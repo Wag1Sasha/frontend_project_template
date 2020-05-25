@@ -6,13 +6,15 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
-    "prettier",
+    'prettier',
+    'plugin:jest/recommended',
+    'jest-enzyme',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -26,35 +28,30 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'import',
-    "prettier"
-  ],
+  plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
   rules: {
-    "indent": ["error", 2],
-    "react/jsx-indent": [0],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
+    'indent': ['error', 2],
+    'react/jsx-indent': [0],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
       {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never',
+      },
     ],
-    "react/jsx-filename-extension": [0],
-    "import/prefer-default-export": [0],
-    "import/no-unresolved": [0],
-    "jsx-a11y/click-events-have-key-events": [0],
-    "jsx-a11y/no-noninteractive-element-interactions": [0],
-    "@typescript-eslint/interface-name-prefix": [0],
-    "prettier/prettier": ["error"],
-    "no-underscore-dangle": [0],
-    "jsx-a11y/control-has-associated-label": [0],
-    "@typescript-eslint/no-unused-vars": [0],
-    "@typescript-eslint/no-empty-function": [0]
+    'react/jsx-filename-extension': [0],
+    'import/prefer-default-export': [0],
+    'import/no-unresolved': [0],
+    'jsx-a11y/click-events-have-key-events': [0],
+    'jsx-a11y/no-noninteractive-element-interactions': [0],
+    '@typescript-eslint/interface-name-prefix': [0],
+    'prettier/prettier': ['error'],
+    'no-underscore-dangle': [0],
+    'jsx-a11y/control-has-associated-label': [0],
+    '@typescript-eslint/no-unused-vars': [0],
+    '@typescript-eslint/no-empty-function': [0],
   },
-};
+}
