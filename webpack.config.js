@@ -13,7 +13,7 @@ const {
     BundleAnalyzerPlugin
 } = require('webpack-bundle-analyzer');
 const entryHTML = 'index.html'
-const entryScript = 'index.jsx'
+const entryScript = 'index.tsx'
 const src = resolve(__dirname, "src")
 const output = resolve(__dirname, 'public')
 const DevServerPort = 3333
