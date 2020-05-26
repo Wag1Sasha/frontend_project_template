@@ -1,16 +1,26 @@
 {
+  "include": [
+    "src"
+  ],
+  "exclude": ["./public", "node_modules"],
   "compilerOptions": {
     "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
-    "jsx": "react",
+    "baseUrl": "./",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
-    "strictNullChecks": true,
+    "jsx": "react",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "strict":true,
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
-    "baseUrl": "./"
+    "resolveJsonModule": true,   
   }
 }
